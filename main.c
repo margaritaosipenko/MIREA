@@ -6,12 +6,12 @@ int main(int argc, char **argv) {
    char scale = ' ';
 
    if (argc == 1) {
-       printf ("ghgggghghghgh...");
+       printf ("error");
        return 0;
    } else if (argc == 2) {
        numb = atof(argv [1]);
        if (numb < -273.15) {
-           printf ("sorry this is parasha less than absolute null");
+           printf ("less than absolute null");
            return -1;
       } else {
        printf ("%.2f C:\n%.2f F\n%.2f K\n\n%.2f F:\n%.2f C\n%.2f K\n\n%.2f K:\n%.2f C\n%.2f F\n", numb, numb * 9/5 + 32,
@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
    }else{
        numb = atof(argv [1]);
        if (isalpha(*argv[2])== 0){
-          printf ("fignya");
+          printf ("error");
           return 0;
        }
     scale = *argv[2];
