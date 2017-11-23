@@ -19,7 +19,6 @@ int main()
     }
     struct addrinfo* addr = NULL; /* A structure that stores information about the IP address of the listening socket */
 
-    /* Шаблон для инициализации структуры адреса */
     struct addrinfo hints;
     ZeroMemory(&hints, sizeof(hints));
 
